@@ -25,7 +25,9 @@ body {
 
   .card {
     position: relative;
-    transition: all 150ms $ease;
+    transition: 
+      opacity 150ms $ease,
+      transform 150ms $ease;
     background: transparentize($col_gry, .01);
     opacity: 0;
     transform: translateY(.7rem);
@@ -41,9 +43,12 @@ body {
     img {
       z-index: -1;
       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       max-width: 100%;
       display: block;
-      transition: all 500ms $ease;
+      transition: transform 300ms $ease;
     }
 
     .content {
@@ -61,16 +66,16 @@ body {
         z-index: -1;
         position: absolute;
         right: 0;
-        width: 0;
+        width: 0%;
         height: 100%;
-        transition: all 300ms $ease;
+        transition: width 300ms $ease;
       }
 
       &.active-state {
         &:after {
           left: 0;
-          width: 100%;
           transition-timing-function: $in;
+          width: 100%;
         }
 
         .tip {
@@ -83,7 +88,7 @@ body {
     &:hover {
       cursor: pointer;
       img {
-        transform: scale(1.2);
+        transform: translate(-50%, -50%) scale(1.1);
       }
     }
 
@@ -101,7 +106,9 @@ body {
       width: 1.5rem;
       border-radius: 50%;
       margin: .4rem;
-      transition: all 200ms $in;
+      transition: 
+        opacity 200ms $in,
+        transform 200ms $in;
       opacity: 0;
       transform: translateY(.7rem);
 
