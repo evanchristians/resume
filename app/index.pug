@@ -8,14 +8,6 @@ html(lang="en")
 
     link(rel="stylesheet", href="css/main.css")
   body
-    //- nav(class="nav-bar")
-    //-   ul(id="nav-bar-list")
-    //-     li(nav-item) home
-    //-     li(nav-item) about
-    //-     li(nav-item) contact
-    //-     li(nav-item) not sure
-    //-     #tooltip
-
     .grid(id="grid")
       - for (var i = 0; i < 9; ++i) {
         .card
@@ -25,7 +17,6 @@ html(lang="en")
               .icon
               .icon
               .icon
-              //- .tip blah
       - }
 
   script(src="scripts/main.js")

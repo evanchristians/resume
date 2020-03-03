@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  padding-top: 50px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.logo {
+  display: block;
+  margin: 15px 0;
+  width: 90%;
+  max-height: 200px;
+  color: white;
+}
+
+.nav-bar {
+  ul {
+    list-style-type: none;
+    display: flex;
+    li {
+      padding: 0.5rem 1.5rem;
+    }
+  }
+}
