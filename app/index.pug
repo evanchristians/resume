@@ -7,17 +7,7 @@ html(lang="en")
     title= pageTitle
 
     link(rel="stylesheet", href="css/main.css")
-  body
-    .grid(id="grid")
-      - for (var i = 0; i < 9; ++i) {
-        .card
-          img(src=`https://unsplash.it/500/60${i}`)
-          .content
-            .card__footer
-              .icon
-              .icon
-              .icon
-      - }
+  body(class="wrapper")
 
   script(src="scripts/main.js")
 

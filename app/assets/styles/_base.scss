@@ -1,0 +1,10 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  background: $col_wht_alt;
+  padding-top: 50px;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
