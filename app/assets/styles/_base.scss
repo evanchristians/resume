@@ -1,10 +1,16 @@
 body {
-  font-family: 'Bellota', cursive;
+  font-family: $sans-serif;
   margin: 0;
-  font-weight: 300;
+  font-weight: $normal;
+  font-size: 16px;
   background: $white;
+  color: $black
 }
 
 *, ::after, ::before {
   box-sizing: border-box;
+}
+
+header {
+  padding: 3rem;
 }

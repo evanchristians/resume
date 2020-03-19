@@ -1,11 +1,9 @@
 // colors
 
 $grey: #354649;
-$grey-light: #6C7A89;
-$blue: #A3C6C4;
-$blue-light: #E0E7E9;
-$black: #040404;
-$white: #FFFCF9;
+$blue-light: #e1f4f3;
+$black: #333333;
+$white: #FFFFFF;
 
 // easings
 
@@ -19,6 +17,20 @@ $global_wrapper_width: 1240px;
 
 // Typography
 
+@font-face {
+    font-family: 'argesta_displayregular';
+    src: url('../fonts/argestadisplay-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'UniNeue Light';
+    src: url('../fonts/UniNeue-Light.otf');
+}
+
+$serif: 'argesta_displayregular', sans-serif;
+
+$sans-serif: 'UniNeue Light', sans-serif;
+
 // weights
 
-$
+$normal: 400;
