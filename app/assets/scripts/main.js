@@ -1,44 +1,28 @@
-const tooltip = document.getElementById("tooltip")
-const grid = document.getElementById("grid")
-const gridItems = document.querySelectorAll(".grid > .card")
-const gridItemsContent = document.querySelectorAll(".card > .content")
-let currentlyActive
-let timeOut
+const scrollElements = document.querySelectorAll("[scrolly]")
 
-window.addEventListener("load", () => {
-  console.log(gridItems)
-  gridItems.forEach((element, key) => {
-    setTimeout(() => {
-      element.classList.add('active-state')
-    }, 75 * key)
-  })
-})
+function enterView(element) {
+  element.classList.add('is-in-view')
+}
 
-gridItems.forEach(e => {
-  e.addEventListener("click", ()=> {
-    currentlyActive ? currentlyActive.classList.remove('focused-state') : null
-    currentlyActive = e
-    currentlyActive.classList.add('focused-state')
-  })
-})
+function exitView(element) {
+  element.classList.remove('is-in-view')
+}
 
-gridItemsContent.forEach(e => {
-  e.addEventListener("mouseenter", () => {
-    e.classList.add('active-state')
+scrollElements.forEach(element => {
+  let observerTimeOut
 
-    e.childNodes[0].childNodes.forEach((c, index) => {
-      setTimeout(() => {
-        c.classList.add('active-state')
-      }, 25 + 100 * index)
-    })
-  })
-  e.addEventListener("mouseleave", () => {
-    setTimeout(() => {
-      e.classList.remove('active-state')
+  let observer = new IntersectionObserver(function(entry) {
+    let element = entry[0]
 
-      e.childNodes[0].childNodes.forEach((c, index) => {
-        c.classList.remove('active-state')
-      })
-    }, 250)
-  })
+    if(element.isIntersecting) {
+      clearTimeout(observerTimeOut)
+      enterView(element.target)
+    } else {
+      observerTimeOut = setTimeout(() => {
+        exitView(element.target)
+      }, 3000)
+    }
+  }, { threshold: [.2, 1] });
+
+  observer.observe(element);
 })

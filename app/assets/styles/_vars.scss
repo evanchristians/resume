@@ -1,14 +1,27 @@
 // colors
 
-$col_prm: #00CC66;
-$col_sec: #FF6978;
-$col_blk: #040404;
-$col_wht: #FFFCF9;
-$col_wht_alt: #f0eeec;
-$col_gry: #61707D;
+$grey: #465362;
+$blue-light: #e1f4f3;
+$black: #191919;
+$white: #f9f9f9;
+$white_1: #f1f0f0;
+$primary: #fb1;
 
 // easings
 
 $ease: cubic-bezier(0.4, 0.0, 0.2, 1);
-$in: cubic-bezier(0.0, 0.0, 0.2, 1);
-$out: cubic-bezier(0.4, 0.0, 1, 1);
+$ease_in: cubic-bezier(0.0, 0.0, 0.2, 1);
+$ease_out: cubic-bezier(0.7, 0, 0.84, 0);
+
+// sizes
+
+$global_wrapper_width: 1240px;
+
+// Typography
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,800|Work+Sans:300&display=swap');
+
+$type_headings: 'Poppins', sans-serif;
+
+$type_body: 'Work Sans', sans-serif;
+

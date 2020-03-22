@@ -34,6 +34,12 @@ function scripts() {
     .pipe(browserSync.stream())
 }
 
+function fonts() {
+  return src('app/assets/fonts/**/*.*')
+    .pipe(dest('app/dist/fonts'))
+    .pipe(browserSync.stream())
+}
+
 // Serve and watch sass/pug files for changes
 function watchAndServe() {
   browserSync.init({
@@ -42,6 +48,7 @@ function watchAndServe() {
 
   watch('app/assets/styles/**/*.scss', styles)
   watch('app/*.pug', html)
+  watch('app/assets/fonts/**/*.*', fonts)
   watch('app/assets/scripts/**/*.js', scripts)
 }
 
@@ -49,4 +56,4 @@ function watchAndServe() {
 exports.html = html
 exports.styles = styles
 exports.watch = watchAndServe
-exports.default = series(html, styles, scripts, watchAndServe)
+exports.default = series(html, styles, scripts, fonts, watchAndServe)
