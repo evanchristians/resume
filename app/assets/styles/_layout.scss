@@ -21,8 +21,7 @@ section {
     }
   }
 
-  &:after {
-    content: '';
+  .overlay {
     background: $white_1;
     z-index: -1;
     position: absolute;
@@ -31,13 +30,12 @@ section {
     width: 0%;
     height: 100%;
     transition: width 700ms $ease;
-  }
 
-  &.is-in-view {
-    &:after {
+    &.is-in-view {
       width: 100%;
     }
   }
+
 }
 
 .griddy {
