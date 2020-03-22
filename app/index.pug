@@ -9,11 +9,20 @@ html(lang="en")
     link(rel="stylesheet", href="css/main.css")
   body
     header 
-      h1 Evan Christians
-    main(class="wrapper")
+      h1(scrolly) Evan Ryklieff
+      span(scrolly) Junior Fullstack Developer
+    main
+      section(scrolly)
+        h2(scrolly) This Is A Section
+        p(scrolly) Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptatibus.
+        - var i = 0
+        .griddy(scrolly)
+          while i < 12
+            .item(item-text=`item #${i}`)
+              img(src=`https://unsplash.it/600/${600 + i}`, alt="Source: Unsplash.it")
+            - i++
       section
-        p(scrolly) Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quod reprehenderit eum architecto incidunt dignissimos perspiciatis delectus repellendus ratione libero!
-
-
+        h2(scrolly) This Is Another Section!
+        h3(scrolly) This one has a subtitle 
   script(src="scripts/main.js")
 
