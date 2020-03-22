@@ -10,7 +10,7 @@ const browserSync = require('browser-sync').create()
 function html() {
   return src('app/*.pug')
     .pipe(pug())
-    .pipe(dest('app/dist'))
+    .pipe(dest('./'))
     .pipe(browserSync.stream())
 }
 
@@ -43,7 +43,7 @@ function fonts() {
 // Serve and watch sass/pug files for changes
 function watchAndServe() {
   browserSync.init({
-    server: 'app/dist',
+    server: './',
   })
 
   watch('app/assets/styles/**/*.scss', styles)
