@@ -1,10 +1,11 @@
 body {
-  font-family: $sans-serif;
+  position: relative;
+  font-family: $type_body;
   margin: 0;
-  font-weight: $normal;
+  padding: 0;
   font-size: 16px;
   background: $white;
-  color: $black
+  color: $black;
 }
 
 *, ::after, ::before {
@@ -12,5 +13,9 @@ body {
 }
 
 header {
-  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }

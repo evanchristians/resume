@@ -1,15 +1,17 @@
 // colors
 
-$grey: #354649;
+$grey: #465362;
 $blue-light: #e1f4f3;
-$black: #333333;
-$white: #FFFFFF;
+$black: #191919;
+$white: #f9f9f9;
+$white_1: #f1f0f0;
+$primary: #fb1;
 
 // easings
 
 $ease: cubic-bezier(0.4, 0.0, 0.2, 1);
-$in: cubic-bezier(0.0, 0.0, 0.2, 1);
-$out: cubic-bezier(0.4, 0.0, 1, 1);
+$ease_in: cubic-bezier(0.0, 0.0, 0.2, 1);
+$ease_out: cubic-bezier(0.7, 0, 0.84, 0);
 
 // sizes
 
@@ -17,20 +19,9 @@ $global_wrapper_width: 1240px;
 
 // Typography
 
-@font-face {
-    font-family: 'argesta_displayregular';
-    src: url('../fonts/argestadisplay-regular-webfont.woff2') format('woff2');
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,800|Work+Sans:300&display=swap');
 
-@font-face {
-    font-family: 'UniNeue Light';
-    src: url('../fonts/UniNeue-Light.otf');
-}
+$type_headings: 'Poppins', sans-serif;
 
-$serif: 'argesta_displayregular', sans-serif;
+$type_body: 'Work Sans', sans-serif;
 
-$sans-serif: 'UniNeue Light', sans-serif;
-
-// weights
-
-$normal: 400;
