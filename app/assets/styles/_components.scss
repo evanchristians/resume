@@ -13,7 +13,7 @@
 .fat-underline {
     &:after {
         content: '';
-        background: transparentize($grey, .9);
+        background: $info;
         z-index: -1;
         position: absolute;
         bottom: 0;

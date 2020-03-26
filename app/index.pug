@@ -13,17 +13,14 @@ html(lang="en")
       span(scrolly) Junior Fullstack Developer
     main
       section
-        .overlay(scrolly)
-        h2(scrolly) This Is A Section
-        p(scrolly) Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptatibus.
-        - var i = 0
-        .griddy(scrolly)
-          while i < 12
-            .item(item-text=`item #${i}`)
-              img(image-source=`https://unsplash.it/300/${230 + i}`, alt="Source: Unsplash.it")
-            - i++
-      section
-        h2(scrolly) This Is Another Section!
-        h3(scrolly) This one has a subtitle 
+        .container
+          h2(scrolly) This Is A Section
+          p(scrolly) Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptatibus.
+          - var i = 0
+          .griddy
+            while i < 12
+              .item(item-text=`item #${i}` scrolly)
+                img(image-source=`https://unsplash.it/500/${500 + i}`, alt="Source: Unsplash.it" scrolly)
+              - i++ 
   script(src="app/dist/scripts/main.js")
 
