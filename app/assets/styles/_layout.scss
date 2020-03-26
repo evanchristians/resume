@@ -53,7 +53,7 @@ section {
 
     @for $i from 1 through 12 {
       &:nth-of-type(#{$i}) {
-        transition-delay: random(300) + ms;
+        transition-delay: (random(6) * 50) + ms;
       }
     }
 
