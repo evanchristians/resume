@@ -1,23 +1,14 @@
 body {
   position: relative;
-  font-family: $type_body;
+  font-family: $type_headings;
+  background: $white;
+  font-weight: 300;
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  background: $secondary;
+  font-size: 18px;
   color: $black;
 }
 
 *, ::after, ::before {
   box-sizing: border-box;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  background: linear-gradient($primary, $secondary);
-  color: $white;
 }

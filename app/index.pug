@@ -9,18 +9,122 @@ html(lang="en")
     link(rel="stylesheet", href="app/dist/css/main.css")
   body
     header 
-      h1(scrolly) Evan Ryklieff
-      span(scrolly) Junior Fullstack Developer
+      h1(scrolly) Maike Erb
     main
-      section
+      section(class="is-smaller")
+        .headshot
+          img(image-source="app/dist/img/pp.jfif", alt="Maike Erb")
+      section(class="details")
+        .container.personal
+          h3(scrolly) Persönliche daten
+          p(scrolly)
+            span Vorname
+            | Maike Noemi Gesine
+          p(scrolly)
+            span Nachname
+            | Erb
+          p(scrolly)
+            span Adresse
+            | Honoldweg 6<br/>70193 Stuttgart
+          p(scrolly)
+            span Telefon-Nummer
+            | 0711-634659
+          p(scrolly)
+            span E-Mail
+            a(href="mailto:maikeerb72@gmail.com") maikeerb72@gmail.com
+          p(scrolly)
+            span Staatsangehörigkeit
+            | Deutsch
+          p(scrolly)
+            span Geburtstag
+            | 05 &middot; 01 &middot; 2001
+            i(class="fas fa-calendar-alt")
+          p(scrolly)
+            span Geburtsort
+            | Reutlingen
         .container
-          h2(scrolly) This Is A Section
-          p(scrolly) Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptatibus.
-          - var i = 0
-          .griddy
-            while i < 12
-              .item(item-text=`item #${i}` scrolly)
-                img(image-source=`https://unsplash.it/500/${500 + i}`, alt="Source: Unsplash.it" scrolly)
-              - i++ 
+          h3(scrolly) Eltern
+          .container.parents
+            p(scrolly)
+              span Carola Bäurle-Erb
+              | Dipl. - Psych.,<br/>Analytische Kinder - und Jugendlichenpsychotherapeutin
+            p(scrolly)  
+              span Hermann Erb
+              | Facharzt für Innere und Psychotherapeutische Medizin, Psychoanalytiker
+
+      section(class="span-2")
+          h3(scrolly) Schullaufbahn
+          .container
+            p(scrolly)
+              span Schulabschluss Abitur
+              | 2019
+            p(scrolly)
+              span Gymnasium<b> | </b>St. Agnes, Stuttgart
+              | <sub>Sept</sub>&nbsp;2011&nbsp;-&nbsp;<sub>Jul</sub>&nbsp;2019
+            p(scrolly)
+              span High School<b> | </b>Delta Secondary School, Ladner, Kanada
+              | <sub>Jan</sub>&nbsp;-&nbsp;<sub>Jul</sub>&nbsp;2017
+            p(scrolly)
+              span Grundschule Kleiner Sonniger Winkel, Stuttgart
+              | <sub>Sept</sub>&nbsp;2007&nbsp;-&nbsp;<sub>Jul</sub>&nbsp;2011
+
+          h3(scrolly) Freiwilligendienst
+          .container
+            p(scrolly)
+              span Entsendeorganisation
+              | Fachstelle für Internationale Freiwilligendienste, Diözese Freiburg
+            p(scrolly)
+              span Einsatzstelle
+              | <em>Life Choices, Lansdowne, Kapstadt, Südafrika</em>&nbsp;2019 - 2020
+            p(scrolly)
+              span Eingesetzt in den Bereichen
+              | Gesundheitsberatung / HIV-Testung und Lehre
+ 
+          h3(scrolly) Hobbies / Engagement
+          .container
+            ul 
+              li Tennis
+              li Schwimmen
+              li Wandern
+              li Skifahren
+              li Lesen
+              li Geige & Ukulele spielen
+              li Babysitten
+          h3(scrolly) Schul-Arbeitsgemeinschaft / Aktivitäten
+          .container
+            p(scrolly)
+              span Schreibwerkstatt
+              | 2018 - 2019
+            p(scrolly)
+              span Theater
+              | 2017 - 2019
+            p(scrolly)
+              span Debating
+              | 2015 - 2016
+            p(scrolly)
+              span Klassensprecherin
+              | 2014 - 2016
+            p(scrolly)
+              span Soziales Engagement<b>|</b>kostenlose Nachhilfe im Kinderheim St.Josef
+              | 2014 - 2015
+            p(scrolly)
+              span Chor
+              | 2011 - 2012
+
+          h3(scrolly) Kenntnisse
+          .container.kentnisse
+            div
+              h2(scrolly) SPRACHEN
+              ul
+                li Deutsch
+                li Englisch (fließend)
+                li Französisch
+                li Latein
+            div
+              h2(scrolly) COMPUTER KENNTNISSE
+              ul
+                li MS Office Word
+                li PowerPoint
   script(src="app/dist/scripts/main.js")
+  script(src="https://use.fontawesome.com/d7c13791d9.js")
 

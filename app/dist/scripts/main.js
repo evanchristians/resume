@@ -44,7 +44,7 @@ scrollElements.forEach(element => {
       })
     } else {
       observerTimeOut = setTimeout(() => {
-        exitView(element.target)
+        // exitView(element.target)
       }, 1000)
     }
   }, { threshold: [.2, 1] });

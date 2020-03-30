@@ -43,6 +43,7 @@ function fonts() {
 // Serve and watch sass/pug files for changes
 function watchAndServe() {
   browserSync.init({
+    port: 8080,
     server: './',
   })
 
