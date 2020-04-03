@@ -1,5 +1,10 @@
 const scrollElements = document.querySelectorAll("[scrolly]")
 const gridImages = document.querySelectorAll(".griddy > .item > img")
+const images = document.querySelectorAll('img')
+
+images.forEach(image => {
+  image.src = image.getAttribute('image-source')
+})
 
 function enterView(element) {
   element.classList.add('is-in-view')
@@ -9,28 +14,20 @@ function exitView(element) {
   element.classList.remove('is-in-view')
 }
 
-function selectImages(element) {
-  return element.querySelectorAll('img')
+function isImage(element) {
+  return element.tagName === 'IMG'
 }
 
-function waitForImagesToLoad(images, callback) {
-  images = selectImages(images)
 
-  let count =  images.length ?? 0
-  
-  if (count > 1) {
-    images.forEach(image => {
-      image.addEventListener('load', () => {
-        count--
-        if (count < 1) {
-          return callback()
-        }
-      })
-      image.src = image.getAttribute('image-source')
-    })
-  } else {
+
+function awaitImageLoad(element, callback) {
+  image = isImage(element) ? element : false
+
+  if(!image || image.complete) return callback();
+
+  image.addEventListener('load', () => {
     return callback()
-  }
+  })
 }
 
 scrollElements.forEach(element => {
@@ -42,13 +39,13 @@ scrollElements.forEach(element => {
     if(element.isIntersecting) {
       clearTimeout(observerTimeOut)
 
-      waitForImagesToLoad(element.target, () => {
+      awaitImageLoad(element.target, () => {
         enterView(element.target)
       })
     } else {
       observerTimeOut = setTimeout(() => {
         exitView(element.target)
-      }, 3000)
+      }, 1000)
     }
   }, { threshold: [.2, 1] });
 
