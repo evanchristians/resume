@@ -8,14 +8,24 @@ h1, h2, h3, h4 {
 
 h1 {
     @extend .generic-type-transition;
+    // border: {
+    //     top: 1px solid $white;
+    //     bottom: 1px solid $white;
+    // } 
 
-    font-size: 2.75rem;
+    line-height: 1.2;
+    padding: .5rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2rem;
-    opacity: 0;
-    filter: blur(4px);
-    transform: scale(1.05);
+    font-weight: 300;
+    // max-width: 23rem;
+    margin: 2rem auto;
+    // // letter-spacing: 2rem;
+    // opacity: 0;
+    // filter: blur(4px);
+    // transform: scale(1.05);
 
     &.is-in-view {
         opacity: 1;
