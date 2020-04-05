@@ -1,6 +1,7 @@
 const scrollElements = document.querySelectorAll("[scrolly]")
 const gridImages = document.querySelectorAll(".griddy > .item > img")
 const images = document.querySelectorAll('img')
+const parallaxElements = document.querySelectorAll("[parallax]")
 
 images.forEach(image => {
   image.src = image.getAttribute('image-source')
