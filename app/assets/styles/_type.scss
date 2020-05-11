@@ -14,14 +14,15 @@ h1 {
     // } 
 
     line-height: 1.2;
-    padding: .5rem 0;
-    font-size: 2.5rem;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
     letter-spacing: 1rem;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
+    color: $info;
     font-weight: 300;
     // max-width: 23rem;
-    margin: 2rem auto;
     // // letter-spacing: 2rem;
     // opacity: 0;
     // filter: blur(4px);
@@ -47,14 +48,18 @@ h2 {
 
 h3 {
     @extend .generic-type-transition;
-    @extend .fat-underline;
+    // @extend .fat-underline;
 
-    font-size: 1.45rem;
+    font-size: 2rem;
     opacity: 0;
     font-weight: 300;
-    margin: 0 1rem;
-    letter-spacing: .1rem;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+    letter-spacing: .25rem;
     text-transform: uppercase;
+    // text-decoration: underline;
+
     line-height: 1.2;
 
     &.is-in-view {
@@ -64,17 +69,35 @@ h3 {
 
 p {
     @extend .generic-type-transition;
+    font-size: 1.5rem;
     padding: 0 1rem;
     line-height: 1.23;
     margin-top: 0;
-    margin-bottom: .75rem;
-    text-align: right;
+    margin-bottom: 1.25rem;
+    // text-align: right;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     opacity: 0;
     transform: translateY(.5rem);
+
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+
+    article {
+        display: inline;
+    }
+
+    i {
+        width: 1.25rem;
+        text-align: right;
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+        color: $info;
+    }
 
     &.is-in-view {
         opacity: 1;

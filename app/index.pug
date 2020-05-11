@@ -8,11 +8,40 @@ html(lang="en")
 
     link(rel="stylesheet", href="app/dist/css/main.css")
   body
-    header 
-
     main
-      h1 Bewerbungsmappe
+      aside
+        img(image-source="app/dist/img/pp.jfif", alt="Maike Erb")
+        h3(scrolly) Maike Erb
+
+      section
+        h1 Bewerbungsmappe
+        .details-card.daten
+          h3(scrolly) Persönliche Daten
+          p(scrolly)
+            i(class="fas fa-map-marker-alt")
+            span Honoldweg 6,<br> 70193 Stuttgart
+
+          p(scrolly)
+            i(class="fas fa-phone")
+            | 0711 634659
+          p(scrolly)
+            i(class="fas fa-mobile-alt")
+            | 0176 84248415
+          p(scrolly)
+            i(class="fa fa-envelope")
+            a(href="") maikeerb72@gmail.com
+        .details-card 
+          h3(scrolly) Inhalt
+          p(scrolly) &mdash; Kopie eines amtlichen Lichtbildausweises
+          p(scrolly) &mdash; Nachweis der Krankenversicherung
+          p(scrolly) &mdash; Tabellarischer Lebenslauf
+          p(scrolly) &mdash; Nachweis Freiwilligendienst
+          p(scrolly) &mdash; Zusatzvereinbarung Orientierungsstudium
+          p(scrolly) &mdash; Beglaubigte Kopie der Abiturkunde
+        footer
+          p(scrolly) Maike Erb
+            span.signature
+          p(scrolly) Stuttgart, den 28 &middot; 04 &middot; 2020
       //- img.headshot(image-source="app/dist/img/pp.jfif", alt="Maike Erb")
   script(src="app/dist/scripts/main.js")
-  script(src="https://use.fontawesome.com/d7c13791d9.js")
-
+  script(src="https://kit.fontawesome.com/ce5d40ef27.js")
