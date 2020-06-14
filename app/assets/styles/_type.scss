@@ -1,19 +1,19 @@
 h1, h2, h3, h4 {
-    font-family: $type_headings;
     margin: 0;
     padding: 0;
-    font-weight: 100;
     position: relative;
+    font-family: $type_body;
+    font-weight: 500;
 }
 
 h1 {
     @extend .generic-type-transition;
+    font-size: 5em;
 
-    font-size: 7.5rem;
-    text-align: center;
-    opacity: 0;
-    filter: blur(4px);
-    transform: scale(1.05);
+    &[scrolly] {
+        opacity: 0;
+        transform: scale(1.05);
+    }
 
     &.is-in-view {
         opacity: 1;
@@ -25,10 +25,15 @@ h1 {
 h2 {
     @extend .generic-type-transition;
     @extend .underline;
-    
-    font-size: 5rem;
-    opacity: 0;
-    transform: translateY(.5rem);
+
+    font-size: 3rem;
+    font-weight: 300;
+    text-indent: 4px;
+
+    &[scrolly] {
+        opacity: 0;
+        transform: translateY(.5rem);
+    }
 
     &.is-in-view {
         opacity: 1;
@@ -38,13 +43,8 @@ h2 {
 
 h3 {
     @extend .generic-type-transition;
-    @extend .fat-underline;
 
-    font-size: 1.2rem;
-    font-family: $type_body;
-    opacity: 0;
-    transform: translateY(.5rem);
-    line-height: 1.2;
+    font-size: 2rem;
 
     &.is-in-view {
         opacity: 1;

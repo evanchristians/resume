@@ -4,23 +4,32 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title= pageTitle
+    meta(name="title" content="Evan Christians | Fullstack Developer")
+    meta(name="description" content="Evan Christians is a Fullstack Web Developer, with expertise in database design, e-commerce and user experience design")
 
-    link(rel="stylesheet", href="app/dist/css/main.css")
+    link(rel="stylesheet" href="app/dist/css/main.css")
   body
-    header 
-      h1(scrolly) Evan Ryklieff
-      span(scrolly) Junior Fullstack Developer
+    header.header-grid
+      .wrapper.header-details
+        h1 Evan Christians
+        h2 Fullstack Developer
+        .contact
+          ul
+            li
+              a(href="http://")
+                i(class="fab fa-github")
+            li
+              a(href="http://")
+                i(class="fab fa-codepen")
+            li
+              a(href="http://")
+                i(class="fab fa-linkedin-in")
+            li
+              a(href="http://")
+                i(class="fas fa-at")
+      .wrapper.header-profile
+        .img-container
+          img(image-source="app/dist/img/evan.jpg" alt="Evan Christians | Junior Fullstack Developer")
     main
-      section
-        .container
-          h2(scrolly) This Is A Section
-          p(scrolly) Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptatibus.
-          - var i = 0
-          .griddy
-            while i < 12
-              .item(item-text=`item #${i}` scrolly)
-                img(image-source=`https://unsplash.it/500/${500 + i}`, alt="Source: Unsplash.it" scrolly)
-              - i++ 
   script(src="app/dist/scripts/main.js")
-
+  script(src="https://kit.fontawesome.com/ce5d40ef27.js" crossorigin="anonymous")

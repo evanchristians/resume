@@ -4,20 +4,11 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background: $secondary;
+  font-weight: 100;
+  background: $grey;
   color: $black;
 }
 
 *, ::after, ::before {
   box-sizing: border-box;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  background: linear-gradient($primary, $secondary);
-  color: $white;
 }

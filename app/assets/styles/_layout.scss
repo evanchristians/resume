@@ -1,19 +1,61 @@
 .wrapper {
   position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding: 1rem;
-  font-size: 1.5rem;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+.header {
+  &-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    height: 50vh;
+    min-height: 40em;
+
+    .wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  &-details {
+    background: $black_;
+    padding-right: 6em;
+    color: $white;
+  }
+  &-profile {
+    background: $black;
+    .headshot {
+      border-radius: 50%;
+    }
+  }
+
+}
+
+main {
+  min-height: 40em;
+  background: $black__;
+}
+
+.img-container {
+  left: -4em;
+  position: absolute;
+
+  img {
+    box-shadow: 0 0 4em #0f0f0f1f;
+    border-radius: 50%;
+    max-width: 27em;
+  }
 }
 
 section {
   position: relative;
-  color: $white;
   padding: 3rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
   &:after {
     z-index: -1;
     position: absolute;
@@ -36,71 +78,32 @@ section {
 
 }
 
-.griddy {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 75rem;
-  width: 100%;
-  margin: 4rem 0;
-  
-  .item {
-    opacity: 0;
-    transform: translateY(2rem);
-    overflow: hidden;
-    position: relative;
-    padding-bottom: calc(3/4 * 100%);
-    transition: all 100ms $ease;
+.contact {
+  position: absolute;
+  bottom: 3em;
+  left: 3em;
 
-    @for $i from 1 through 12 {
-      &:nth-of-type(#{$i}) {
-        transition-delay: (random(6) * 50) + ms;
-      }
-    }
-
-    &:after {
-      content: attr(item-text);
-      padding: .1rem .3rem;
-      z-index: -1;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: $black;
-      color: $white;
-      font-family: $type_headings;
-      font-size: 1rem;
-      // opacity: 0;
-      transition: opacity 300ms $ease_in;
-    }
-
-    &.is-in-view {
-      opacity: 1;
-      transform: translateY(0rem);
-      transition-duration: 500ms;
-    }
-
-    img {
-      max-width: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 400ms $ease;
-
-      &.is-in-view {
-        opacity: 1;
-      }
-    }
-    
+  a {
+    font-size: 18px;
+    color: $white;
+    text-decoration: none;
+    transition: color 300ms $ease;
     &:hover {
-      img {
-        opacity: 0;
-      }
+      color: $prim;
+    }
+  }
 
-      &:after {
-        opacity: 1;
-      }
+  ul {
+    margin: .5em 0 0 .5em;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+
+    li {
+      position: relative;
+      padding: 0 1.5em 0 0;
+      font-size: 16px;
+      line-height: 1;
     }
   }
 }

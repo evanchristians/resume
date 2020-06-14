@@ -1,29 +1,28 @@
 // colors
 
-$grey: #465362;
+$grey: #D3D3D3;
+$grey_: #bebebe;
 $blue-light: #e1f4f3;
-$black: #191919;
+$black: #242424;
+$black_: #202020;
+$black__: #1d1d1d;
 $white: #f9f9f9;
-$white_1: #f1f0f0;
-$info: #808aff;
-$primary: #6870C6;
-$secondary: #5469F4;
-$darken: #324dc4;
+$white_1: #e2e2e2;
+$prim: #FF6700;
 // easings
 
 $ease: cubic-bezier(0.4, 0.0, 0.2, 1);
 $ease_in: cubic-bezier(0.0, 0.0, 0.2, 1);
 $ease_out: cubic-bezier(0.7, 0, 0.84, 0);
 
-// sizes
+// size
 
 $global_wrapper_width: 1240px;
 
 // Typography
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,800|Work+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 
-$type_headings: 'Poppins', sans-serif;
 
-$type_body: 'Work Sans', sans-serif;
+$type_body: 'Source Sans Pro', sans-serif;
 
