@@ -2,15 +2,28 @@
   position: relative;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 3em;
+  padding: 2rem 3rem;
+  width: 100%;
 }
 
 .header {
   &-grid {
     display: grid;
     grid-template-columns: 2fr 1.5fr;
-    height: 50vh;
-    min-height: 40em;
+    min-height: 35rem;
+
+
+    .logo {
+      position: absolute;
+      top: 2rem;
+      left: 3rem;
+      font-weight: 600;
+      font-size: 2em;
+      line-height: 1;
+      padding: .3rem .5rem;
+      color: $black;
+      transform: rotate(90deg);
+    }
 
     .wrapper {
       display: flex;
@@ -20,12 +33,12 @@
     }
   }
   &-details {
-    background: $black_;
-    padding-right: 6em;
-    color: $white;
+    background: $grey;
+    padding-right: 6rem;
+    color: $black;
   }
   &-profile {
-    background: $black;
+    background: $grey_;
     .headshot {
       border-radius: 50%;
     }
@@ -36,6 +49,19 @@
 main {
   min-height: 40em;
   background: $black__;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+
+  .alternate {
+    background: $black;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 30rem;
+    margin: 4rem 0;
+    color: $grey;
+  }
 }
 
 .img-container {
@@ -43,7 +69,7 @@ main {
   position: absolute;
 
   img {
-    box-shadow: 0 0 4em #0f0f0f1f;
+    box-shadow: 0 0 4em transparentize($black, .8);
     border-radius: 50%;
     max-width: 27em;
   }
@@ -52,9 +78,6 @@ main {
 section {
   position: relative;
   padding: 3rem 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 
   &:after {
     z-index: -1;
@@ -78,6 +101,28 @@ section {
 
 }
 
+.skills {
+  margin: 2rem 0;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: .4rem;
+  }
+
+  li {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+
+    &:not(:last-child) {
+      &:after {
+        content: '\\';
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+
 .contact {
   position: absolute;
   bottom: 3em;
@@ -85,7 +130,7 @@ section {
 
   a {
     font-size: 18px;
-    color: $white;
+    color: $black__;
     text-decoration: none;
     transition: color 300ms $ease;
     &:hover {
