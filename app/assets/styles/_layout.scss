@@ -10,7 +10,7 @@
   &-grid {
     display: grid;
     grid-template-columns: 2fr 1.5fr;
-    min-height: 35rem;
+    min-height: 40rem;
 
 
     .logo {
@@ -22,7 +22,12 @@
       line-height: 1;
       padding: .3rem .5rem;
       color: $black;
-      transform: rotate(90deg);
+      transform: rotate(180deg);
+      letter-spacing: -6px;
+
+      span {
+        color: $prim;
+      }
     }
 
     .wrapper {
@@ -36,9 +41,47 @@
     background: $grey;
     padding-right: 6rem;
     color: $black;
+
   }
   &-profile {
     background: $grey_;
+    overflow: hidden;
+    nav > ul {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      display: flex;
+      list-style-type: none;
+
+      li > a {
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 1rem;
+        text-transform: uppercase;
+        color: transparentize($black, .5);
+        transition:
+          background 300ms $ease,
+          color 300ms $ease;
+        padding: .4rem .8rem;
+
+        &:hover {
+          color: $black__;
+        }
+
+        &.hire {
+          border-radius: 2px;
+          background: $prim;
+          color: $white;
+
+          &:hover {
+            background: $white;
+            color: $prim;
+          }
+      }
+
+      }
+    }
+
     .headshot {
       border-radius: 50%;
     }
@@ -48,7 +91,7 @@
 
 main {
   min-height: 40em;
-  background: $black__;
+  background: $black;
   display: grid;
   grid-template-columns: 2fr 1.5fr;
 
@@ -65,13 +108,32 @@ main {
 }
 
 .img-container {
-  left: -4em;
+  right: 0;
+  bottom: 0;
   position: absolute;
+  max-width: 27em;
+  width: 100%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 30em;
+    height: 30em;
+    background: $prim;
+    border-radius: 50%;
+  }
 
   img {
-    box-shadow: 0 0 4em transparentize($black, .8);
-    border-radius: 50%;
-    max-width: 27em;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    right: 0;
+    display: block;
+    max-width: 100%;
+
   }
 }
 
@@ -118,6 +180,7 @@ section {
       &:after {
         content: '\\';
         margin-left: .5rem;
+        color: $prim;
       }
     }
   }
@@ -129,9 +192,7 @@ section {
   left: 3em;
 
   a {
-    font-size: 18px;
-    color: $black__;
-    text-decoration: none;
+    font-size: 20px;
     transition: color 300ms $ease;
     &:hover {
       color: $prim;

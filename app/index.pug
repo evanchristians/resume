@@ -11,7 +11,17 @@ html(lang="en")
   body
     header.header-grid
       .wrapper.header-details
-        .logo e&middot;
+        .logo e<span>.</span>
+      .wrapper.header-profile
+        nav
+          ul
+            li
+              a(href='') Experience
+            li
+              a(href='') About Me
+            li
+              a(href='' class='hire') Hire Me!
+      .wrapper.header-details
         h1 Evan Christians
         h2 Fullstack Developer
         .skills
@@ -39,7 +49,7 @@ html(lang="en")
                 i(class="fas fa-at")
       .wrapper.header-profile
         .img-container
-          img(image-source="app/dist/img/evan.jpg" alt="Evan Christians | Junior Fullstack Developer")
+          img(image-source="app/dist/img/evan_t.png" alt="Evan Christians | Junior Fullstack Developer")
     main
       section.wrapper
         .card

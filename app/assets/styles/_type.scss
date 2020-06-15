@@ -24,7 +24,6 @@ h1 {
 
 h2 {
     @extend .generic-type-transition;
-    @extend .underline;
 
     font-size: 3rem;
     font-weight: 300;
@@ -72,4 +71,9 @@ span {
     z-index: 1;
     padding: .1rem .3rem;
     text-transform: uppercase;
+}
+
+a {
+    color: $black__;
+    text-decoration: none;
 }
