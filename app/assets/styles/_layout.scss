@@ -20,11 +20,11 @@ main {
   display: grid;
   max-width: 70rem;
   margin: 1rem auto;
-  grid-template-columns: 19rem 1fr;
+  grid-template-columns: 27rem 1fr;
 
   .headshot {
     position: relative;
-    padding: 0rem 1rem;
+    padding: 0rem 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
