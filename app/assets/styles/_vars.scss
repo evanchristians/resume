@@ -1,28 +1,23 @@
-// colors
+// FONTS -----------------------------
 
-$grey: #D3D3D3;
-$grey_: #bebebe;
-$blue-light: #e1f4f3;
-$black: #242424;
-$black_: #202020;
-$black__: #1d1d1d;
-$white: #f9f9f9;
-$white_1: #e2e2e2;
-$prim: #2CA58D;
-// easings
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,500|Work+Sans:100,300,400');
 
-$ease: cubic-bezier(0.4, 0.0, 0.2, 1);
-$ease_in: cubic-bezier(0.0, 0.0, 0.2, 1);
-$ease_out: cubic-bezier(0.7, 0, 0.84, 0);
+$ws: 'Work Sans', sans-serif;
 
-// size
+$pop: 'Poppins', sans-serif;
 
-$global_wrapper_width: 1240px;
+// EASINGS -------------------------------
 
-// Typography
+$out_med: cubic-bezier(0.165, 0.84, 0.44, 1);
+$out_ex: cubic-bezier(0.19, 1, 0.22, 1);
+$inout_med: cubic-bezier(0.645, 0.045, 0.355, 1);
+$out_bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$inout_bounce: cubic-bezier(0.68, 0, 0.265, 1.90); 
+$in_med: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;600&display=swap');
-
-
-$type_body: 'Hind Madurai', sans-serif;
-
+$white: #ffffff;
+$off_white: #f9f9f9;
+$grey: #E5FFDE;
+$grey_dark: #404040;
+$primary: #fb1;
+$black: #070707;

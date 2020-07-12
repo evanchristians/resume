@@ -9,53 +9,16 @@ html(lang="en")
 
     link(rel="stylesheet" href="app/dist/css/main.css")
   body
-    header.header-grid
-      .wrapper.header-details
-        .logo e<span>.</span>
-      .wrapper.header-profile
-        nav
-          ul
-            li
-              a(href='') Experience
-            li
-              a(href='') About Me
-            li
-              a(href='' class='hire') Hire Me!
-      .wrapper.header-details
+    header
+      .content
+        img(image-source="app/dist/img/evan_t.png", alt="" class="portrait")
         h1 Evan Christians
-        h2 Fullstack Developer
-        .skills
-          ul
-            li PHP
-            li Git
-            li AngularJs
-            li Linux
-            li Docker
-            li Python
-            li C#
-        .contact
-          ul
-            li
-              a(href='')
-                i(class="fab fa-github")
-            li
-              a(href='')
-                i(class="fab fa-codepen")
-            li
-              a(href='')
-                i(class="fab fa-linkedin-in")
-            li
-              a(href='')
-                i(class="fas fa-at")
-      .wrapper.header-profile
-        .img-container
-          img(image-source="app/dist/img/evan_t.png" alt="Evan Christians | Junior Fullstack Developer")
-    main
-      section.wrapper
-        //- .card
-        //-   h2 About Me
-        //-   p Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat distinctio aperiam quos ea corporis exercitationem hic voluptatem adipisci quae quam ex quia voluptates quidem sint mollitia, debitis excepturi. Veniam?
-      section.wrapper.alternate
+        h2 Fullstack Web Developer
+        .header-button let's talk
+        ul.header-icons
+          li
+            a(href="")
+              i.fa.fa-github
 
   script(src="app/dist/scripts/main.js")
   script(src="https://kit.fontawesome.com/ce5d40ef27.js" crossorigin="anonymous")
