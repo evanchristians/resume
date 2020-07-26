@@ -43,6 +43,7 @@ main {
     img {
       max-width: 100%;
       border-radius: 50%;
+      background: transparentize($info, .65);
     }
   }
 }
