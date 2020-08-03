@@ -11,11 +11,90 @@
 
 .portrait {
   max-width: 10rem;
-  margin: 0 auto;
+  margin: 1rem auto;
   border-radius: 50%;
   background: transparentize($primary, .2);
+  filter: brightness(120%);
 }
 
-.header-button {
-  margin-top: 1rem;
+.header {
+  &-button {
+    margin-top: 1rem;
+  }
+
+  &-icons {
+    display: flex;
+    list-style-type: none;
+    margin: 1rem auto;
+    padding: 0;
+
+    li {
+      margin: 0 .5rem;
+      font-size: .75rem;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.about {
+  background: $white;
+  min-height: 10rem;
+
+  &-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    max-width: 35rem;
+    margin: 2rem auto;
+
+    div {
+      background: transparentize($primary, .9);
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    span {
+      font-family: $pop;
+      color: $primary;
+      font-weight: 300;
+      display: block;
+      text-transform: uppercase;
+      font-size: .7rem;
+      display: flex;
+      align-items: baseline;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+
+      i {
+        margin-right: .25rem;
+        font-size: 1rem;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+  }
+}
+
+.career {
+  h2 {
+    color: $black;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: .8rem;
+    font-weight: 300;
+    color: $primary;
+    text-transform: uppercase;
+  }
 }

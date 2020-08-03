@@ -1,9 +1,10 @@
 // FONTS -----------------------------
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,500|Work+Sans:100,300,400');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
 $ws: 'Work Sans', sans-serif;
-
+$serif: 'Libre Baskerville', serif;
 $pop: 'Poppins', sans-serif;
 
 // EASINGS -------------------------------
@@ -16,8 +17,8 @@ $inout_bounce: cubic-bezier(0.68, 0, 0.265, 1.90);
 $in_med: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 
 $white: #ffffff;
-$off_white: #f9f9f9;
+$off_white: #F3F4FB;
 $grey: #E5FFDE;
 $grey_dark: #404040;
-$primary: #fb1;
+$primary: #f05e7b;
 $black: #070707;
