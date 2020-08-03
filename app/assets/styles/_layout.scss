@@ -89,6 +89,7 @@
   h2 {
     color: $black;
     font-size: 2rem;
+    margin-bottom: 4rem;
   }
 
   h3 {
@@ -96,5 +97,17 @@
     font-weight: 300;
     color: $primary;
     text-transform: uppercase;
+  }
+
+  &-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+
+    div {
+      padding: 1.5rem;
+      max-width: 17.5rem;
+      background: darken($off_white, 3%);
+    }
   }
 }
