@@ -10,7 +10,7 @@
 }
 
 .portrait {
-  max-width: 10rem;
+  max-width: 12rem;
   margin: 1rem auto;
   border-radius: 50%;
   background: transparentize($black, .8);
@@ -51,7 +51,7 @@
     margin: 2rem auto;
 
     div {
-      background: transparentize($black, .9);
+      background: $off_white;
       padding: 1.5rem 2rem;
       border-radius: 2px;
     }
