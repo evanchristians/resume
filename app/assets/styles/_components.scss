@@ -1,11 +1,11 @@
-@mixin button($background: $primary, $color: $white) {
+@mixin button($background: $black, $color: $white) {
   display: inline-flex;
   padding: .5rem 1rem;
-  border-radius: 2rem;
+  border-radius: .25rem;
   background-color: $background;
   color: $color;
-  font-family: $pop;
-  font-weight: 200;
+  font-family: $main;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 300ms $inout_med;
 
