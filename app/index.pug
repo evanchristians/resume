@@ -9,78 +9,135 @@ html(lang="en")
 
     link(rel="stylesheet" href="app/dist/css/main.css")
   body
-    header
-      .content
-        img(image-source="app/dist/img/evan_t.png", alt="" class="portrait")
-        h1 Evan Christians
-        h3 Fullstack Web Developer
-        .header-button let's talk
-        ul.header-icons
-          li
-            a(href="")
-              i.fa.fa-github
-          li
-            a(href="")
-              i.fa.fa-linkedin
-          li
-            a(href="")
-              i.fa.fa-xing
-    main
-      section.about
-        .content
-          h2 About Me
-          .about-details
-            .block
-              span 
-                i.fas.fa-map-marker-alt
-                .lead-line
-                | Address
-              p 25 Bowden Rd, Observatory, Cape Town, 7925
-            .block
-              span
-                i.fas.fa-mobile
-                .lead-line
-                | Cellphone
-              p +27 81 384 1158
-            .block
-              span
-                i.fas.fa-envelope
-                .lead-line
-                | Email
-              p
-                a(href="mailto:evanryk@gmail.com") evanryk@gmail.com
-            .block
-              span
-                i.fas.fa-calendar-day
-                .lead-line
-                | Date of Birth
-              p 19 October 1997
-      section.career
-        .content
-          h3 career
-          h2 Experience
+    .page-grid
+      aside
+        .sticky-content
+          section.header
+            .content
+              img(image-source="app/dist/img/evan_t.png", alt="" class="portrait")
+              h1 Evan Christians
+              h3 Fullstack Web Developer
+              ul.header-icons
+                li
+                  a(href="")
+                    i.fa.fa-github
+                li
+                  a(href="")
+                    i.fa.fa-linkedin
+                li
+                  a(href="")
+                    i.fa.fa-xing
+              .header-button let's talk
 
-          .career-blocks
-            .block
-              .lead
-                h3 Junior Web Developer
-                .lead-line
-                p.career-period July 2019 - Present
-              p.career-company Lima Bean
-              p.career-role Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis rerum doloremque illo similique et ut autem est reiciendis. Doloribus, quas!
-            .block
-              .lead
-                h3 Junior Web Developer (Contracted)
-                .lead-line
-                p.career-period November 2019 - March 2020
-              p.career-company NTT (via Lima Bean)
-              p.career-role Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt optio ex, laboriosam culpa quod ullam reprehenderit, iusto totam odit odio consequatur.
-            .block
-              .lead
-                h3 Intern Web Developer
-                .lead-line
-                p.career-period March 2019 - July 2019
-              p.career-company Lima Bean
-              p.career-role Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aliquid autem dicta ab alias, commodi a! Accusantium, exercitationem consequuntur.
+          section.about
+            //- h2 About Me
+            .about-details
+              .block
+                span 
+                  i.fas.fa-map-marker-alt
+                  .lead-line
+                  | Address
+                p 25 Bowden Rd<br/> Observatory<br/> Cape Town<br/> 7925
+              .block
+                span
+                  i.fas.fa-mobile
+                  .lead-line
+                  | Cellphone
+                p +27 81 384 1158
+              .block
+                span
+                  i.fas.fa-envelope
+                  .lead-line
+                  | Email
+                p
+                  a(href="mailto:evanryk@gmail.com") evanryk@gmail.com
+              .block
+                span
+                  i.fas.fa-calendar-day
+                  .lead-line
+                  | Date of Birth
+                p 19 Oct 1997
+      main
+        section.career
+          .content
+            h4 career
+            h2 Experience
+
+            .career-blocks
+              .block
+                .lead
+                  h3 Junior Fullstack Developer
+                  .lead-line
+                  p.career-period Jul 2019 - Present
+                p.career-company Lima Bean
+                p.career-role My responsibilies as a junior developer are an extension of that of an intern developer at Lima Bean, with an emphasis on more accountability, greater attention to detail, ensuring my work is of high quality and abides by universal code standards and best practices and that I continue to push my technical prowess and expand my knowledge. I spend the time I've gained since improving my speed of development ensuring my code is easily maintainable and removing inconsistencies within our codebases.
+              .block
+                .lead
+                  h3 Junior Frontend Developer (Contracted)
+                  .lead-line
+                  p.career-period Nov 2019 - Jun 2020
+                p.career-company Nippon Telegraph and Telephone (NTT) via Lima Bean
+                p.career-role NTT is an international technology services company. During my time at NTT, I worked as part of the dev team responsibile for creating micro frontends, integrating their GraphQL data service & interacting with the highcharts api within Angular, using NGRX as a state management tool. The tasks performed contributed to the building of the sleek UI of the "Hardware as a Service" platform NTT had been developing. While my role was predominantly frontend focused I learnt a great deal about querying APIs with GraphQL and deploying mutliple apps independently from the same repository.
+              .block
+                .lead
+                  h3 Intern Fullstack Developer
+                  .lead-line
+                  p.career-period Mar 2019 - Jul 2019
+                p.career-company Lima Bean
+                p.career-role Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aliquid autem dicta ab alias, commodi a! Accusantium, exercitationem consequuntur.
+        section.education
+          .content
+            h4 career
+            h2 Education
+
+            .education-blocks
+              section.school
+                h3 
+                  em Schooling
+                .block
+                  .lead
+                    h3 Introduction to Web Development Course
+                    .lead-line
+                    p.education-period Sep 2018 - Mar 2019
+                  p.education-institute Salesians Life Choices (Taught by Codespace)
+                .block
+                  .lead
+                    h3 Introduction to Actuarial Sciences
+                    .lead-line
+                    p.education-period 2017
+                  p.education-institute The University of Cape Town
+                .block
+                  .lead
+                    h3 High School to Matriculate
+                    .lead-line
+                    p.education-period 2014 - 2016
+                  p.education-institute Camps Bay High School
+                .block
+                  .lead
+                    h3 High School
+                    .lead-line
+                    p.education-period 2011 - 2014
+                  p.education-institute Groote Schuur High School
+                .block
+                  .lead
+                    h3 Primary School
+                    .lead-line
+                    p.education-period 2002 - 2010
+                  p.education-institute Sunlands Primary School
+              section.achievements
+                h3 
+                  em Achievements
+                .block
+                  .lead
+                    h3 UCT Mathematics Olympiad Finalist (Partners)
+                    .lead-line
+                    p.education-period 2016
+                  p.education-institute The University of Cape Town
+                .block
+                  .lead
+                    h3 Eskom High School Science Fair Silver Medalist
+                    .lead-line
+                    p.education-period 2015
+                  p.education-institute Eskom
   script(src="app/dist/scripts/main.js")
   script(src="https://kit.fontawesome.com/ce5d40ef27.js" crossorigin="anonymous")

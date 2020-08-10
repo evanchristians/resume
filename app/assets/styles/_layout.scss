@@ -1,9 +1,28 @@
+.page-grid {
+  display: grid;
+  grid-template-columns: 22.5rem 1fr;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.sticky-content {
+  // position: sticky;
+  top: 0;
+  width: 100%;
+}
+
 .content {
   position: relative;
-  max-width: 995px;
-  padding: 2rem;
   margin: 0 auto;
   display: flex;
+  padding: 2rem 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -11,17 +30,13 @@
 
 .portrait {
   max-width: 12rem;
-  margin: 1rem auto;
+  margin: 0 auto 2rem;
   border-radius: 50%;
   background: transparentize($black, .8);
   filter: brightness(120%);
 }
 
 .header {
-  &-button {
-    margin-top: 1rem;
-  }
-
   &-icons {
     display: flex;
     list-style-type: none;
@@ -40,20 +55,27 @@
 }
 
 .about {
-  background: $white;
-  min-height: 10rem;
+  padding: 0;
+  text-align: center; 
+  width: 100%;
+
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+  }
 
   &-details {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
-    // max-width: 35rem;
-    margin: 2rem auto;
-
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    margin: .25 auto;
     .block {
-      background: $off_white;
-      padding: 1.5rem;
-      border-radius: 2px;
+      display: flex;
+      align-items: flex-start;
+      // border-bottom: 1px solid transparentize($black, .75);
+      background: $white;
     }
 
     a {
@@ -64,43 +86,42 @@
       font-family: $main;
       color: $black;
       font-weight: 300;
-      text-transform: uppercase;
+      text-transform: lowercase;
       font-size: .7rem;
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
       letter-spacing: 1px;
       margin-bottom: 1rem;
-      white-space: nowrap;
-
-      .lead-line {
-        width: 100%;
-        height: 1px;
-        background: transparentize($black, .75);
-        margin: 0 .5rem;
-      }
 
       i {
-        font-size: 1rem;
+        font-size: .85rem;
+        margin-bottom: .25rem;
       }
     }
 
     p {
-      margin: 0 1rem;
+      margin: 0 0 0 auto;
+      justify-self: flex-end;
+      text-align: right;
+      max-width: 12rem;
+      font-size: .85rem;
     }
 
   }
 }
 
-.career {
+.career, .education {
   .lead {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    white-space: nowrap;
     margin-bottom: -1rem;
+    max-width: 100%;
 
     &-line {
-      width: 100%;
       height: 1px;
+      width: 1fr;
       background: transparentize($black, .75);
       margin: 0 .5rem;
     }
@@ -109,14 +130,18 @@
   h2 {
     color: $black;
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
-  h3 {
+  h4, h3 {
     font-size: .8rem;
-    font-weight: 300;
+    font-weight: 400;
     color: $black;
     text-transform: uppercase;
+  }
+
+  h4 {
+    font-weight: 200;
   }
 
   &-blocks {
@@ -126,7 +151,6 @@
 
     .block {
       padding: 1.5rem 0;
-      // background: darken($off_white, 3%);
     }
   }
 
@@ -135,8 +159,37 @@
     font-weight: 200;
   }
 
-  &-company {
+  &-company, &-institute {
     font-size: .8rem;
     font-weight: 200;
+  }
+}
+
+.education {
+  background: $white;
+
+  &-blocks {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 2rem;
+
+    .block {
+      padding: .5rem 2rem .5rem 0;
+      display: flex;
+      flex-direction: column;
+      margin-top: .5rem;
+    }
+  }
+
+  &-institute {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-left: auto;
+    font-weight: 400;
+  }
+
+  .school {
+    border-right: 1px solid $black;
   }
 }

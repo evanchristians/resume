@@ -1,6 +1,6 @@
 @mixin button($background: $black, $color: $white) {
   display: inline-flex;
-  padding: .5rem 1rem;
+  padding: .5rem .75rem;
   border-radius: .25rem;
   background-color: $background;
   color: $color;
@@ -8,6 +8,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 300ms $inout_med;
+  font-size: .8rem;
 
   &:hover {
     background-color: darken($background, 5%);
@@ -16,4 +17,11 @@
 
 [class*="button"] {
   @include button;
+}
+
+em {
+  background: $black;
+  color: $white;
+  font-style: normal;
+  padding: .05rem .2rem;
 }
