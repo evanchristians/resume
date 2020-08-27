@@ -21,10 +21,6 @@ main {
   width: 100%;
 }
 
-.new-page {
-  padding: 0 2rem;
-}
-
 .content {
   position: relative;
   margin: 0 auto;
@@ -71,8 +67,8 @@ main {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      // border-bottom: 1px solid transparentize($black, .75);
-      background: $white;
+      background: transparentize($black, .95);
+      padding: 1rem 1.5rem;
     }
 
     a {
