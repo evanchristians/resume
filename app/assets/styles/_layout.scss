@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 22.5rem 1fr;
   max-width: 1440px;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
@@ -13,7 +14,7 @@ aside {
 }
 
 main {
-  padding: 0 2rem 0 1.5rem;
+  padding: 3rem 2rem 0 1.5rem;
 }
 
 .sticky-content {
@@ -22,7 +23,7 @@ main {
 }
 
 .new-page {
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .content {
@@ -138,6 +139,10 @@ main {
     }
   }
 
+  .content {
+    padding-top: 0;
+  }
+
   &-responsibilities {
     text-transform: capitalize;
     background: $black;
@@ -195,6 +200,10 @@ main {
 
 .education {
   background: $white;
+
+  .content {
+    padding-top: 5rem;
+  }
 
   &-blocks {
     display: grid;
