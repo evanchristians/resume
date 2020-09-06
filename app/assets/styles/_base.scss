@@ -18,3 +18,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+
+hr {
+  background: transparentize($black, .75);
+  border: none;
+  display: block;
+  height: 1px;
+  width: 100%;
+}
