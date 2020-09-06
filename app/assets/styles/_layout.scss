@@ -56,24 +56,19 @@ main {
   text-align: center;
   width: 100%;
 
-  h2 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: 0;
-  }
-
   &-details {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
     margin: .25 auto;
+
     .block {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
       background: transparentize($black, .95);
-      padding: 1rem 1.5rem;
+      padding: .75rem;
+      border-bottom: 2px solid transparentize($black, .75);
     }
 
     a {
@@ -91,20 +86,17 @@ main {
       font-family: $main;
       color: $black;
       font-weight: 400;
-      text-transform: uppercase;
-      font-size: .75rem;
+      text-transform: capitalize;
+      font-size: .65rem;
       display: flex;
       align-items: center;
       width: 100%;
-      margin-bottom: 1rem;
+      margin-bottom: .25rem;
       white-space: nowrap;
 
       i {
-        font-size: .75rem;
-        background: $black;
-        color: $white;
-        width: 25px;
-        height: 25px;
+        font-size: .55rem;
+        color: $black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -117,7 +109,8 @@ main {
       margin: 0 0 0 auto;
       justify-self: flex-end;
       text-align: right;
-      font-size: .85rem;
+      font-size: .75rem;
+      margin-right: 2rem;
     }
 
   }
@@ -148,7 +141,7 @@ main {
     background: $black;
     color: $white;
     display: inline-block;
-    margin-bottom: 0;
+    margin: 0;
     padding: .1rem .3rem;
   }
 
@@ -156,30 +149,34 @@ main {
     li {
       font-size: .85rem;
       margin-bottom: 1rem;
+      list-style-type: circle;
+      font-weight: 300;
     }
   }
 
   h2 {
     color: $black;
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
+    font-weight: 400;
   }
 
   h4, h3 {
     font-size: .8rem;
-    font-weight: 400;
+    font-weight: 300;
     color: $black;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
   }
 
   h4 {
-    font-weight: 300;
+    font-weight: 200;
   }
 
   &-blocks {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
     line-height: 1.5;
 
     .block {
