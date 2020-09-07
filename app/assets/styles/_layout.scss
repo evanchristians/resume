@@ -1,6 +1,6 @@
 .page-grid {
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 325px 1fr;
   max-width: 1440px;
   padding: 0;
   margin: 0 auto;
@@ -14,7 +14,7 @@ aside {
 }
 
 main {
-  padding: 2rem 1rem 0 1.5rem;
+  padding: 2rem 1rem 0 0;
 }
 
 .sticky-content {
@@ -38,7 +38,7 @@ main {
 }
 
 .portrait {
-  max-width: 12rem;
+  max-width: 10rem;
   margin: 0 auto 2rem;
   border-radius: 50%;
   background: transparentize($black, .9);
@@ -63,11 +63,11 @@ main {
 
     &-blocks .block {
       background: transparentize($black, .95);
-      padding: .15rem 1rem;
-      margin-bottom: 1rem;
+      padding: .15rem .5rem;
+      margin-bottom: 1.5rem;
     }
     &-blurb {
-      font-size: .8rem;
+      font-size: .65rem;
 
       &::before, &::after {
         font-size: 1.15rem;
@@ -216,7 +216,7 @@ main {
     line-height: 1.5;
 
     .block {
-      padding-bottom: 1.5rem;
+      padding-bottom: .5rem;
     }
   }
 
@@ -282,7 +282,7 @@ main {
     list-style-type: none;
     padding: .5rem;
     margin: 0 0 1rem;
-    font-size: .75rem;
+    font-size: .775rem;
     font-weight: 200;
     background: transparentize($black, .95);
     border-bottom: 2px solid transparentize($black, .75);
