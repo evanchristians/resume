@@ -41,7 +41,7 @@ main {
   max-width: 10rem;
   margin: 0 auto 2rem;
   border-radius: 50%;
-  background: transparentize($black, .9);
+  background: transparentize($black, .815);
   filter: brightness(130%);
 }
 
@@ -62,12 +62,13 @@ main {
     }
 
     &-blocks .block {
-      background: transparentize($black, .95);
+      background: transparentize($black, .925);
       padding: .15rem .5rem;
       margin-bottom: 1.5rem;
     }
+
     &-blurb {
-      font-size: .6rem;
+      font-size: .8rem;
 
       &::before, &::after {
         font-size: 1.15rem;
@@ -97,7 +98,7 @@ main {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      background: transparentize($black, .95);
+      background: transparentize($black, .925);
       padding: .75rem;
       border-bottom: 2px solid transparentize($black, .75);
     }
@@ -198,7 +199,7 @@ main {
 
     &:after {
       content: '';
-      background: transparentize($black, .9);
+      background: transparentize($black, .925);
       width: 120%;
       height: .5rem;
       position: absolute;
@@ -241,7 +242,7 @@ main {
   &-company, &-institute {
     font-size: .8rem;
     font-weight: 200;
-    background: transparentize($black, .95);
+    background: transparentize($black, .925);
     display: inline-flex;
     padding: 0 .15rem;
     margin: .75rem 0 .5rem;
@@ -262,8 +263,12 @@ main {
 
     .block {
       padding: 0;
-      margin-top: .5rem;
+      margin-top: 0;
     }
+  }
+
+  .achievements {
+    padding-top: 1rem;
   }
 
   &-points {
@@ -299,7 +304,7 @@ main {
     margin: 0 0 1rem;
     font-size: .775rem;
     font-weight: 200;
-    background: transparentize($black, .95);
+    background: transparentize($black, .925);
     border-bottom: 2px solid transparentize($black, .75);
 
     &-item {
@@ -311,8 +316,19 @@ main {
     }
 
     &-heading {
-      font-weight: 400;
+      font-weight: 600;
       margin-bottom: .25rem;
+      position: relative;
+
+      &:after {
+        // content: '';
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        background: transparentize($black, .75);
+      }
     }
   }
 }
