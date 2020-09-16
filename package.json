@@ -1,8 +1,26 @@
 {
+  "name": "portfolio-rebuild",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanchristians/evanchristians.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanchristians/evanchristians.github.io/issues"
+  },
+  "homepage": "https://github.com/evanchristians/evanchristians.github.io#readme",
+  "description": "",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.0",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.1.0"
   }
 }
