@@ -18,7 +18,7 @@ header {
 
 main {
   display: grid;
-  max-width: 70rem;
+  max-width: 80rem;
   margin: 1rem auto;
   grid-template-columns: 27rem 1fr;
 
@@ -29,7 +29,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
-    
+
     &:after {
       content: '';
       height: 10rem;
@@ -40,6 +40,7 @@ main {
       right: 0;
       transform: translateY(-50%);
     }
+
     img {
       max-width: 100%;
       border-radius: 50%;
@@ -75,7 +76,7 @@ section {
       line-height: 2;
     }
   }
-  
+
   &.details {
     display: grid;
     grid-template-columns: 1fr;
@@ -134,6 +135,21 @@ section {
       max-width: 100%;
       grid-gap: 2rem;
 
+      &.alt {
+        grid-template-columns: repeat(1, 1fr);
+
+        li {
+          span {
+            background: none;
+            float: right;
+          }
+        }
+      }
+
+      &.alt div ul{
+        list-style-type: disc;
+      }
+
       h2 {
         color: $white;
         font-weight: 300;
@@ -145,12 +161,12 @@ section {
 
       div {
         background: transparentize($primary, .75);
-        
+
         ul {
           padding: .5rem 1.5rem;
           display: block;
           list-style-type: circle;
-          
+
           li {
             margin-left: 1rem;
             background: none;
@@ -169,7 +185,7 @@ section {
   max-width: 75rem;
   width: 100%;
   margin: 4rem 0;
-  
+
   .item {
     opacity: 0;
     transform: scale(0) translateY(2rem);
@@ -221,7 +237,7 @@ section {
         transform: none;
       }
     }
-    
+
     &:hover {
 
       img {
@@ -239,8 +255,8 @@ ul {
   flex-wrap: wrap;
   margin: 0;
   padding: 0 1rem;
-  li  {
-    // margin-right: 1rem;
+
+  li {
     background: transparentize($primary, .75);
     color: $grey;
     padding: .1rem .5rem

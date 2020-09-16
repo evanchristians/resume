@@ -17,10 +17,10 @@
         font-weight: 800;
         z-index: -1;
         position: absolute;
-        bottom: .075rem;
+        bottom: -.1rem;
         left: 0;
         width: 0%;
-        height: 1px;
+        height: 2px;
         transition: width 550ms $ease_in 250ms;
     }
     &.is-in-view {

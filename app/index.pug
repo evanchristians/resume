@@ -2,18 +2,18 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title= pageTitle
 
-    link(rel="stylesheet", href="app/dist/css/main.css")
+    link(rel="stylesheet" href="app/dist/css/main.css")
   body
-    header 
+    header
       h1(scrolly) Maike Erb
     main
       section(class="is-smaller")
         .headshot
-          img(image-source="app/dist/img/ppp.png", alt="Maike Erb")
+          img(image-source="app/dist/img/ppp.png" alt="Maike Erb")
       section(class="details")
         .container.personal
           h3(scrolly) Persönliche daten
@@ -48,94 +48,116 @@ html(lang="en")
         //-     p(scrolly)
         //-       span Carola Bäurle-Erb
         //-       | Dipl. - Psych.<br/>Analytische Kinder - und Jugendlichenpsychotherapeutin
-        //-     p(scrolly)  
+        //-     p(scrolly)
         //-       span Hermann Erb
         //-       | Facharzt für Innere und Psychotherapeutische Medizin Psychoanalytiker
 
       section(class="span-2")
-          h3(scrolly) Praktikum
-          .container
-            p(scrolly)
-              span Psychosomatische Abteilung im Robert-Bosch-Krankenhaus
-              | vier Wochen; 06 Jul 2020 - 31 Jul 2020
+        h3(scrolly)  Pflegepraktikum
+        //- .container
+        //-   p(scrolly)
+        //-     span Gynäkologie, Brust-und Tumorzentrum im Robert-Bosch-Krankenhaus
+        //-     | 19 Okt 2020 - 17 Nov 2020
+        //-   p(scrolly)
+        //-     span Palliativstation im Robert-Bosch-Krankenhaus
+        //-     | 07 Sept 2020 - 06 Okt 2020
+        .container.kentnisse.alt
+          div
+            h2(scrolly)  Robert-Bosch-Krankenhaus
+            ul
+              li Gynäkologie, Brust-und Tumorzentrum 
+                span 19 Okt 2020 - 17 Nov 2020
+              li Palliativstation 
+                span 07 Sept 2020 - 06 Okt 2020
+              li Psychosomatik/Psychoonkologie 
+                span 07 Sept 2020 - 06 Okt 2020
+          //- div
+          //-   h2(scrolly) Abteilung im Robert-Bosch-Krankenhaus
+          //-   ul
+
+        //- h3(scrolly) Praktikum
+        //- .container
+        //-   p(scrolly)
+        //-     span Psychosomatische Abteilung im Robert-Bosch-Krankenhaus
+        //-     | vier Wochen; 06 Jul 2020 - 31 Jul 2020
 
 
-          h3(scrolly) Freiwilligendienst
-          .container
-            p(scrolly)
-              span Entsendeorganisation
-              | Fachstelle für Internationale Freiwilligendienste, Diözese Freiburg
-            p(scrolly)
-              span Einsatzstelle
-              | Life Choices, Lansdowne, Kapstadt, Südafrika
-            p(scrolly)
-              span Eingesetzt in den Bereichen
-              | Gesundheitsberatung / HIV-Testung <br/> Life Coaching in High Schools
-            p(scrolly)
-              span Zeitspanne
-              | Aug 2019 - Aug 2020<br/>(Rückflug nach Deutschland erfolgte aufgrund der Corona-Krise verfrüht am 20 Mrz 2020)
- 
-          h3(scrolly) Schullaufbahn
-          .container
-            p(scrolly)
-              span Schulabschluss Abitur
-              | 2019
-            p(scrolly)
-              span Gymnasium<b> | </b>St. Agnes, Stuttgart
-              | Sept&nbsp;2011&nbsp;-&nbsp;Jul&nbsp;2019
-            p(scrolly)
-              span High School<b> | </b>Delta Secondary School, Ladner, Kanada
-              | Jan&nbsp;-&nbsp;Jul&nbsp;2017
-            p(scrolly)
-              span Grundschule<b> | </b>Kleiner Sonniger Winkel, Stuttgart
-              | Sept&nbsp;2007&nbsp;-&nbsp;Jul&nbsp;2011
+        h3(scrolly) Freiwilligendienst
+        .container
+          p(scrolly)
+            span Entsendeorganisation
+            | Fachstelle für Internationale Freiwilligendienste, Diözese Freiburg
+          p(scrolly)
+            span Einsatzstelle
+            | Life Choices, Lansdowne, Kapstadt, Südafrika
+          p(scrolly)
+            span Eingesetzt in den Bereichen
+            | Gesundheitsberatung / HIV-Testung <br/> Life Coaching in High Schools
+          p(scrolly)
+            span Zeitspanne
+            | Aug 2019 - Aug 2020<br/>(Rückflug nach Deutschland erfolgte aufgrund der Corona-Krise verfrüht am 20 Mrz 2020)
 
-          h3(scrolly) Schul-Arbeitsgemeinschaft / Engagement
-          .container
-            p(scrolly)
-              span Schreibwerkstatt
-              | 2018 - 2019
-            p(scrolly)
-              span Theater
-              | 2017 - 2019
-            p(scrolly)
-              span Debating
-              | 2015 - 2016
-            p(scrolly)
-              span Chor
-              | 2011 - 2012
-            <br/>
-            p(scrolly)
-              span Klassensprecherin
-              | 2014 - 2016
-            p(scrolly)
-              span Kostenlose Nachhilfe im Kinderheim St.Josef
-              | 2014 - 2015
+        h3(scrolly) Schullaufbahn
+        .container
+          p(scrolly)
+            span Schulabschluss Abitur
+            | 2019
+          p(scrolly)
+            span Gymnasium<b> | </b>St. Agnes, Stuttgart
+            | Sept&nbsp;2011&nbsp;-&nbsp;Jul&nbsp;2019
+          p(scrolly)
+            span High School<b> | </b>Delta Secondary School, Ladner, Kanada
+            | Jan&nbsp;-&nbsp;Jul&nbsp;2017
+          p(scrolly)
+            span Grundschule<b> | </b>Kleiner Sonniger Winkel, Stuttgart
+            | Sept&nbsp;2007&nbsp;-&nbsp;Jul&nbsp;2011
 
-          h3(scrolly) Hobbies / Aktivitäten
-          .container
-            ul 
-              li Lesen
-              li Geige & Ukulele spielen
-              li Babysitten
-              li Schwimmen
-              li Wandern
-              li Skifahren
-              li Tennis
+        h3(scrolly) Schul-Arbeitsgemeinschaft / Engagement
+        .container
+          p(scrolly)
+            span Schreibwerkstatt
+            | 2018 - 2019
+          p(scrolly)
+            span Theater
+            | 2017 - 2019
+          p(scrolly)
+            span Debating
+            | 2015 - 2016
+          p(scrolly)
+            span Chor
+            | 2011 - 2012
+          <br/>
+          p(scrolly)
+            span Klassensprecherin
+            | 2014 - 2016
+          p(scrolly)
+            span Kostenlose Nachhilfe im Kinderheim St.Josef
+            | 2014 - 2015
 
-          h3(scrolly) Kenntnisse
-          .container.kentnisse
-            div
-              h2(scrolly) SPRACHEN
-              ul
-                li Englisch (fließend)
-                li Französisch
-                li Latein
-            div
-              h2(scrolly) COMPUTER KENNTNISSE
-              ul
-                li MS Office Word
-                li PowerPoint
+        h3(scrolly) Hobbies / Aktivitäten
+        .container
+          ul
+            li Lesen
+            li Geige & Ukulele spielen
+            li Babysitten
+            li Schwimmen
+            li Wandern
+            li Skifahren
+            li Tennis
+
+        h3(scrolly) Kenntnisse
+        .container.kentnisse
+          div
+            h2(scrolly) SPRACHEN
+            ul
+              li Englisch (fließend)
+              li Französisch
+              li Latein
+          div
+            h2(scrolly) COMPUTER KENNTNISSE
+            ul
+              li MS Office Word
+              li PowerPoint
 
   script(src="app/dist/scripts/main.js")
   script(src="https://use.fontawesome.com/d7c13791d9.js")
