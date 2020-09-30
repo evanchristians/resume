@@ -1,14 +1,14 @@
 // colors
 
-$grey: #465362;
+$grey: #000;
 $blue-light: #e1f4f3;
-$black: #191919;
+$black: #000;
 $white: #f9f9f9;
 $white_1: #f1f0f0;
-$info: #7177B7;
-$primary: #A6B1E1;
-$secondary: #5469F4;
-$darken: #324dc4;
+$info: saturate(#1282a2, 20%);
+$primary: $info;
+$secondary: $info;
+$darken: $info;
 // easings
 
 $ease: cubic-bezier(0.4, 0.0, 0.2, 1);

@@ -44,7 +44,7 @@ main {
     img {
       max-width: 100%;
       border-radius: 50%;
-      background: transparentize($info, 0.65);
+      background: transparentize($info, .14);
     }
   }
 }
@@ -55,7 +55,7 @@ section {
   color: $black;
 
   span {
-    background: transparentize($secondary, 0.85);
+    background: transparentize($secondary, 0.9);
     padding: 0 0.1rem;
 
     b {
@@ -172,7 +172,7 @@ section {
       }
 
       div {
-        background: transparentize($primary, 0.75);
+        background: transparentize($primary, 0.85);
 
         ul {
           padding: 0.5rem 1.5rem;
@@ -267,7 +267,7 @@ ul {
   padding: 0 1rem;
 
   li {
-    background: transparentize($primary, 0.75);
+    background: transparentize($primary, 0.85);
     color: $grey;
     padding: 0.1rem 0.5rem;
   }
