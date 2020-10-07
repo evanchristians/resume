@@ -16,29 +16,24 @@ function html() {
 
 // Compile sass files into CSS
 function styles() {
-  return src('app/assets/styles/main.scss')
+  return src('app/styles/main.scss')
     .pipe(sass({
-      includePaths: ['app/assets/styles'],
+      includePaths: ['app/styles'],
       errLogToConsole: true,
       outputStyle: 'compressed',
       onError: browserSync.notify
     }))
-    .pipe(dest('app/dist/css'))
+    .pipe(dest('public/css'))
     .pipe(browserSync.stream())
 }
 
 // Copy assets
 function scripts() {
-  return src('app/assets/scripts/**/*.js')
-    .pipe(dest('app/dist/scripts'))
+  return src('app/scripts/**/*.js')
+    .pipe(dest('public/scripts'))
     .pipe(browserSync.stream())
 }
 
-function fonts() {
-  return src('app/assets/fonts/**/*.*')
-    .pipe(dest('app/dist/fonts'))
-    .pipe(browserSync.stream())
-}
 
 // Serve and watch sass/pug files for changes
 function watchAndServe() {
@@ -47,14 +42,13 @@ function watchAndServe() {
     server: './'
   })
 
-  watch('app/assets/styles/**/*.scss', styles)
+  watch('app/styles/**/*.scss', styles)
   watch('app/*.pug', html)
-  watch('app/assets/fonts/**/*.*', fonts)
-  watch('app/assets/scripts/**/*.js', scripts)
+  watch('app/scripts/**/*.js', scripts)
 }
 
 
 exports.html = html
 exports.styles = styles
 exports.watch = watchAndServe
-exports.default = series(html, styles, scripts, fonts, watchAndServe)
+exports.default = series(html, styles, scripts, watchAndServe)
