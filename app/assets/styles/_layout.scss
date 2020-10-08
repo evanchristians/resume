@@ -3,7 +3,7 @@
   width: 100%;
   overflow: hidden;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 header {
@@ -18,13 +18,14 @@ header {
 
 main {
   display: grid;
-  max-width: 80rem;
+  max-width: 90rem;
+  padding: 0 1.5rem;
   margin: 1rem auto;
   grid-template-columns: 27rem 1fr;
 
   .headshot {
     position: relative;
-    padding: 0rem 5rem;
+    padding: 0rem 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +45,7 @@ main {
     img {
       max-width: 100%;
       border-radius: 50%;
-      background: transparentize($info, .14);
+      background: transparentize($info, 0.14);
     }
   }
 }
@@ -102,7 +103,7 @@ section {
 
     &.parents {
       padding: 1.125rem 0;
-      font-size: 1rem;
+      font-size: 1em;
 
       p {
         margin-top: 0;
@@ -135,14 +136,6 @@ section {
       max-width: 100%;
       grid-gap: 2rem;
 
-      sup {
-        color: darken($primary, 20%);
-      }
-      sub {
-        margin-left: 4rem;
-        margin-top: -1rem;
-      }
-
       &.alt {
         grid-template-columns: repeat(2, 1fr);
 
@@ -159,14 +152,29 @@ section {
       }
 
       &.alt div ul {
+        display: flex;
         list-style-type: disc;
+        flex: 1 1;
+        span {
+          justify-self: flex-end;
+          align-self: flex-end;
+          margin-right: 0;
+          padding-top: 1rem;
+          background: none;
+          margin-left: auto;
+        }
+      }
+
+      &.alt div {
+        display: flex;
+        flex-direction: column;
       }
 
       h2 {
         color: $white;
         font-weight: 300;
         font-family: $type_headings;
-        font-size: 1.25rem;
+        font-size: 1.25em;
         padding: 0.75rem 1.5rem;
         background: $info;
       }
@@ -223,7 +231,7 @@ section {
       color: $white;
       font-family: $type_headings;
       font-weight: 400;
-      font-size: 1rem;
+      font-size: 1em;
       transition: all 300ms $ease_in;
     }
 
