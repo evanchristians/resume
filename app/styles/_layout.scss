@@ -185,7 +185,7 @@ main {
       font-size: .85rem;
       margin-bottom: .25rem;
       list-style-type: circle;
-      font-weight: 300;
+      font-weight: 400;
     }
   }
 
@@ -211,7 +211,7 @@ main {
 
   h4, h3 {
     font-size: .8rem;
-    font-weight: 300;
+    font-weight: 400;
     color: $black;
     text-transform: uppercase;
     display: flex;
@@ -220,7 +220,7 @@ main {
   }
 
   h4 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: .25rem;
   }
 
@@ -236,12 +236,10 @@ main {
 
   &-period {
     font-size: .75rem;
-    font-weight: 300;
   }
 
   &-company, &-institute {
     font-size: .8rem;
-    font-weight: 200;
     background: transparentize($black, .925);
     display: inline-flex;
     padding: 0 .15rem;
@@ -303,7 +301,6 @@ main {
     padding: .5rem;
     margin: 0 0 1rem;
     font-size: .775rem;
-    font-weight: 200;
     background: transparentize($black, .925);
     border-bottom: 2px solid transparentize($black, .75);
 
