@@ -155,13 +155,23 @@ section {
         display: flex;
         list-style-type: disc;
         flex: 1 1;
+        li {
+          width: 100%;
+          padding: 0;
+        }
+
+        li:not(:last-child) > span {
+          margin-bottom: 3rem;
+        }
         span {
+          padding: 0;
           justify-self: flex-end;
           align-self: flex-end;
           margin-right: 0;
-          padding-top: 1rem;
+          margin-top: 1rem;
           background: none;
           margin-left: auto;
+          opacity: .8;
         }
       }
 
