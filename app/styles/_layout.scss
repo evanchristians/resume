@@ -62,7 +62,7 @@ main {
     }
 
     &-blocks .block {
-      background: transparentize($black, .925);
+      // background: $grey;
       padding: .15rem .5rem;
       margin-bottom: 1.5rem;
     }
@@ -98,7 +98,7 @@ main {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      background: transparentize($black, .925);
+      background: $grey;
       padding: .75rem;
       border-bottom: 2px solid transparentize($black, .75);
     }
@@ -199,7 +199,7 @@ main {
 
     &:after {
       content: '';
-      background: transparentize($black, .925);
+      background: $grey;
       width: 120%;
       height: .5rem;
       position: absolute;
@@ -240,7 +240,7 @@ main {
 
   &-company, &-institute {
     font-size: .8rem;
-    background: transparentize($black, .925);
+    background: $grey;
     display: inline-flex;
     padding: 0 .15rem;
     margin: .75rem 0 .5rem;
@@ -301,8 +301,8 @@ main {
     padding: .5rem;
     margin: 0 0 1rem;
     font-size: .775rem;
-    background: transparentize($black, .925);
-    border-bottom: 2px solid transparentize($black, .75);
+    // background: $grey;
+    // border-bottom: 2px solid transparentize($black, .75);
 
     &-item {
       &::before {
